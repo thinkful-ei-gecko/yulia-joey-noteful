@@ -12,6 +12,7 @@ export default function Note(props) {
           <Header />
           <p>{note.name}</p>
           <p>{note.content}</p>
+          <p>{new Date(note.modified).toDateString()}</p>
           <p>{selectedFolder.name}</p>
           <button><Link exact to='/'>Go Back</Link></button>
         </div>
