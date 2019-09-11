@@ -23,17 +23,18 @@ class App extends React.Component {
           />}
           />
           <Route
-          exact path='/folder/:folder-id'
+          exact path='/folder/:folderId'
           render={()=><FolderRoute 
             folders ={this.state.folders}
             notes = {this.state.notes}
           />}
           />
            <Route
-          exact path='/note'
-          render={()=><Note 
+          exact path='/note/:noteId'
+          render={(routeProps)=><Note
             folders ={this.state.folders}
             notes = {this.state.notes}
+            {...routeProps}
           />}
           />
           <Route component={NotFoundPage}/>

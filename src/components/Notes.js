@@ -1,5 +1,5 @@
 import React from 'react'
-import Note from './Note'
+// import Note from './Note'
 import {Link} from 'react-router-dom'
 
 export default function Notes(props) {
