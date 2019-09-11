@@ -1,0 +1,15 @@
+.Nav {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 20px;
+	background-color: aqua;
+}
+.Nav-item {
+	text-decoration: none;
+	color: white;
+}
+.is-active {
+	font-weight: bold;
+	color: red;
+}

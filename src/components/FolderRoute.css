@@ -1,0 +1,16 @@
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.Nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 0px;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+
+}

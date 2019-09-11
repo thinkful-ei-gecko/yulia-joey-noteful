@@ -24,9 +24,10 @@ class App extends React.Component {
           />
           <Route
           exact path='/folder/:folderId'
-          render={()=><FolderRoute 
+          render={(routeProps)=><FolderRoute 
             folders ={this.state.folders}
             notes = {this.state.notes}
+            {...routeProps}
           />}
           />
            <Route

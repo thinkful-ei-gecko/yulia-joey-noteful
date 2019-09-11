@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import React from 'react';
+import './Nav.css'
 
 export default function Nav(props) {
 	const navLinks = props.folders.map(folder => 
