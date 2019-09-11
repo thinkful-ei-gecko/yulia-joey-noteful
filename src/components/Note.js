@@ -1,7 +1,11 @@
 import React from 'react'
 
-export default function Note() {
+
+export default function Note(props) {
+ const selectedFolder = props.notes.map(item => props.folders.filter(folder => folder.id === item.folderId))
     return (
-        <li>Note 1</li>
+        <div>
+        {selectedFolder}
+        </div>
     )
 }

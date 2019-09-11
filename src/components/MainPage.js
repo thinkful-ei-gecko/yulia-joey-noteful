@@ -4,12 +4,17 @@ import Nav from './Nav'
 import Notes from './Notes'
 import Header from './Header'
 
-export default function MainPage() {
+export default function MainPage(props) {
    return (
     <main>
 			<Header />
-      <Nav />
-      <Notes />
+      <Nav 
+      folders ={props.folders}
+      />
+      <Notes 
+      folders ={props.folders}
+      notes ={props.notes}
+      />
     </main>
    )
 }

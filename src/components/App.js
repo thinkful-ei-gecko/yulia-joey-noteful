@@ -4,6 +4,7 @@ import '../App.css';
 import MainPage from './MainPage';
 import FolderRoute from './FolderRoute';
 import NotFoundPage from './NotFoundPage';
+import Note from './Note'
 
 class App extends React.Component {
   state = {
@@ -16,11 +17,24 @@ class App extends React.Component {
         <Switch>
           <Route
           exact path='/'
-          component={MainPage}
+          render={()=><MainPage 
+            folders ={this.state.folders}
+            notes = {this.state.notes}
+          />}
           />
           <Route
           exact path='/folder/:folder-id'
-          component={FolderRoute}
+          render={()=><FolderRoute 
+            folders ={this.state.folders}
+            notes = {this.state.notes}
+          />}
+          />
+           <Route
+          exact path='/note'
+          render={()=><Note 
+            folders ={this.state.folders}
+            notes = {this.state.notes}
+          />}
           />
           <Route component={NotFoundPage}/>
         </Switch>
